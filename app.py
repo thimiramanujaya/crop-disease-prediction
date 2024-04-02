@@ -16,7 +16,7 @@ def main():
 
   selected_menu = option_menu(
       menu_title=None,
-      options=["Rice", "Potato", "Tomato", "Bellpepper", "Cinnamon"],
+      options=["Rice", "Potato", "Tomato", "Bellpepper", "Coconut"],
       orientation="horizontal",
   )
 
@@ -27,7 +27,9 @@ def main():
           image = Image.open(file_uploaded)
           st.write("Uploaded Image.")
           resized_image = image.resize([350, 350])
-          st.image(resized_image)
+          col1, col2, col3 = st.columns(3)
+          with col2:
+            st.image(resized_image)
           final_pred, confidence, consequences, remedies = predict_class(image, crop)
           st.write(f'<span style="font-size:20px; color:#808080">Prediction : {final_pred}</span>', unsafe_allow_html=True)
           st.write(f'<span style="font-size:20px; color:#808080">Confidence : {confidence}%</span>', unsafe_allow_html=True)
@@ -65,9 +67,9 @@ def main():
           cols = [col1, col2, col3]
           display_images(0)
 
-      elif crop=='cinnamon':
-          col1, col2, col3 = st.columns(3)
-          cols = [col1, col2, col3]
+      elif crop=='coconut':
+          col1, col2, col3, col4, col5 = st.columns(5)
+          cols = [col1, col2, col3, col4, col5]
           display_images(0)
           
 
@@ -84,8 +86,8 @@ def main():
   elif selected_menu == "Bellpepper":
       load_content("bellpepper")
     
-  elif selected_menu == "Cinnamon":
-      load_content("cinnamon")
+  elif selected_menu == "Coconut":
+      load_content("coconut")
 
 
 
