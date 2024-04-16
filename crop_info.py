@@ -97,6 +97,31 @@ disease_info = {
         'class_name': ['Pepper__bell___Bacterial_spot', 'Pepper__bell___healthy']
     },
 
+    'coconut': {
+        'CCI_Caterpillars': {
+            'consequences': ['Reduced Yield', 'Decreased Nut Quality', 'Spread Potential'],
+            'remedies': ['Biological Control', 'Cultural Practices', 'Pheromone Traps', 'Insecticides']   
+        },
+        'CCI_Leaflets': {
+            'consequences': ['Yield Loss', 'Weakened Trees', 'Increased Disease Susceptibility', 'Poor Fruit Quality'],
+            'remedies': ['Apply Fungicide', 'Improved Sanitation Practices', 'Nutrient Management', 'Resistant Variety Selection']   
+        },
+        'WCLWD_DryingofLeaflets': {
+            'consequences': [ 'Reduced Photosynthesis', 'Premature Leaf Drop', 'Yield Decline', 'Weakened Trees'],
+            'remedies': ['Improve Drainage', 'Nutrient Management', 'Apply copper-based fungicides with caution', 'Disease Resistance Management']   
+        },
+        'WCLWD_Flaccidity': {
+            'consequences': ['Reduced Growth', 'Leaf Yellowing and Wilting (Flaccidity)', 'Premature Nut Drop', 'Yield Decline', 'Tree Death (in severe cases)'],
+            'remedies': ['Maintain good agricultural practices: proper drainage, fertilization, and sanitation', 'Removing and destroying severely affected palms', 'Ensure optimal nutrient balance']   
+        },
+        'WCLWD_Yellowing': {
+            'consequences': ['Significant Yield Loss', 'Tree Death', 'Reduced Fruit Quality', 'Economic Impact'],
+            'remedies': ['Planting Resistant Varieties', 'Insect Vector Control', 'Quarantine Measures', 'Early Detection']   
+        },
+        'class_name': ['CCI_Caterpillars', 'CCI_Leaflets', 'WCLWD_DryingofLeaflets', 'WCLWD_Flaccidity', 'WCLWD_Yellowing'],
+
+    },
+
     'cinnamon': {
         'leaf_spot_disease': {
             'consequences': ['Reduced Yield', 'Decreased Cinnamon Quality', 'Spread in Humid Conditions'],
@@ -113,9 +138,9 @@ disease_info = {
 }
 
 image_sizes = {
-    'rice': 300,
+    'rice': 256,
     'potato': 256,
     'tomato': 256,
     'bellpepper': 256,
-    'cinnamon': 416,
+    'coconut': 256,
 }

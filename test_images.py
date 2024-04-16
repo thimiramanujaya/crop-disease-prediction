@@ -29,6 +29,14 @@ images_info = {
         {'path': './assets/bellpepper_healthy_leaf.jpg', 'name': 'Healthy Leaf'},
         {'path': './assets/bellpepper_bacterial_spot_2.jpg', 'name': 'Bacterial Spot'},
     ],
+    'coconut': [
+        {'path': './assets/coconut_caterpillars.jpg', 'name': 'Caterpillars'},
+        {'path': './assets/coconut_leaflets.jpg', 'name': 'Leaflets'},
+        {'path': './assets/coconut_drying_of_leaflets.jpg', 'name': 'Drying of Leaflets'},
+        {'path': './assets/coconut_flaccidity.jpg', 'name': 'Flaccidity'},
+        {'path': './assets/coconut_yellowing.jpg', 'name': 'Yellowing'},
+    ],
+
     'cinnamon': [
         {'path': './assets/cinnamon_leaf_spot_desease_2.jpg', 'name': 'Leaf Spot Desease'},
         {'path': './assets/cinnamon_healthy_leaf.jpg', 'name': 'Healthy Leaf'},
